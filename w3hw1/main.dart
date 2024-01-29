@@ -16,7 +16,7 @@ void printfonc() {
 }
 
 //Exercise 2
-// Tanımladığımız void fonksiyonu string,int,double ve bool değerler içeriyor. Veri tiplerine göre değerleri atadıktan sonra atanmış değerleri $.... işlemi ile atadığım değerleri kullanarak ekrana yazdırdım.
+// Tanımladığımız void fonksiyonu string,int,double ve bool değerler içeriyor. Veri tiplerine göre değerleri atadıktan sonra değerleri $.... işlemi ile ekrana yazdırdım.
 void myprofile() {
   String name = "Emre Çiftçi";
   int age = 22;
@@ -35,13 +35,13 @@ void math() {
   int b = 20;
   int c = 10;
 
-// Bölme sonucunda ondalıklı sayı çıkması sebebiyle değişkeni double olmaya zorluyordu. Bunu çözebilmek için / işaretinin soluna ~(tilda) işaretini ekledim. Bu sayede bölme sonucunda her ne sayı çıkarsa çıksın bunu tam sayı oalrak geri döndürdü.
+// Bölme sonucunda ondalıklı sayı çıkması sebebiyle değişkeni double olmaya zorluyordu. Bunu çözebilmek için / işleminden önce ~(tilda) işaretini kullandım. Bu sayede bölme sonucunda her ne sayı çıkarsa çıksın bunu tam sayı olarak geri döndürdü.
   int process = (a - b) * c ~/ (a + b);
   int processTwo = (a * b * c);
   print(process * processTwo);
 }
 
-//Exercise 4 --- Gerçek bir telefon şarj kontrol sistemi gibi sürekli şarjını kontrol eden sonsuz bir döngü yarattım ve bu döngüyü bir dakikada bir çalıştırdım.IDE'nin hata vermemesi için "asyn(asenkron)" kullandım.
+//Exercise 4 --- Gerçek bir telefon şarj kontrol sistemi gibi telefon şarjını sürekli kontrol eden sonsuz bir döngü yarattım ve bu döngüyü bir dakikada bir çalıştırdım.IDE'nin hata verip çalışmayı durdurmaması için "asyn(asenkron)" kullandım.
 void charge(int deger) {
   int charge = deger;
   if (charge == 100) {
